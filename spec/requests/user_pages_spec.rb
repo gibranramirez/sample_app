@@ -52,7 +52,6 @@ describe "with valid information" do
 
      describe "after saving the user" do
         before { click_button submit }
-        
         let(:user) { User.find_by_email('user@example.com') }
 
         it { should have_selector('title', text: user.name) }
